@@ -1,7 +1,6 @@
 <?php
 
+use App\Http\Controllers\TextGeneratorController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [TextGeneratorController::class, 'index']);
